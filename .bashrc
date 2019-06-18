@@ -96,6 +96,15 @@ alias l='ls -CF'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+alias cwh='cd /mnt/c/Users/C0117296/'
+alias c='cd ../'
+alias cdrop='cd /mnt/c/Users/C0117296/Dropbox/'
+alias cdown='cd /mnt/c/Users/C0117296/Downloads/'
+
+function mkcd (){
+	mkdir $1
+	cd $1
+}
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -115,3 +124,13 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# C/C++
+alias gpp17='g++ -std=c++17 -Wall -Wextra -march=native -O2'
+
+# Ruby
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# Python
+alias py='python3'
