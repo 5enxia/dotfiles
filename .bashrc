@@ -99,7 +99,10 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias cwh='cd /mnt/c/Users/C0117296/'
 alias c='cd ../'
 alias cdrop='cd /mnt/c/Users/C0117296/Dropbox/'
-alias cdown='cd /mnt/c/Users/C0117296/Downloads/'
+lias cdown='cd /mnt/c/Users/C0117296/Downloads/'
+
+alias cptex='cp -r ~/repo-sample ./'
+alias proq='cd /mnt/c/Users/C0117296/materials/project1/'
 
 function mkcd (){
 	mkdir $1
