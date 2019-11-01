@@ -130,6 +130,22 @@ alias py='python3'
 # cd
 alias c='cd ../'
 
+#c/c++
+alias gpp17='g++ -std=c++17 -Wall -O2'
+
+# jupyter
+alias jupy2py='jupyter nbconvert --to python'
+
+# ssh
+alias ssh-ito='ssh -i ~/.ssh/ito_id_rsa -l o70664d ito.cc.kyushu-u.ac.jp'
+function scp-ito-s()
+{
+    scp -i ~/.ssh/ito_id_rsa $1 o70664d@ito.cc.kyushu-u.ac.jp:/home/usr4/o70664d/$2
+}
+function scp-ito-r()
+{
+    scp -i ~/.ssh/ito_id_rsa o70664d@ito.cc.kyushu-u.ac.jp:/home/usr4/o70664d/$1 $2
+}
 setopt auto_cd
 # ------------------------------------------------------------ #
 setopt prompt_subst # Make sure prompt is able to be generated properly.
