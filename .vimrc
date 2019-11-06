@@ -350,8 +350,10 @@ set mouse=a
 set whichwrap=b,s,h,l,<,>,[,]
 
 "" color
-"" colorscheme darcula
-let ayucolor='light'
+set termguicolors
+let ayucolor='mirage'
+"let ayucolor='light'
+"let ayucolor='dark'
 colorschem ayu
 
 " template
