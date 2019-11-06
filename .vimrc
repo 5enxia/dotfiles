@@ -62,11 +62,7 @@ Plug 'Shougo/vimshell.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 "" color scheme
-if has('macunix')
-    Plug 'doums/darcula'
-    Plug 'ayu-theme/ayu-vim'
-    "...
-endif
+Plug 'ayu-theme/ayu-vim'
 "" file/folder icon
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
