@@ -1,14 +1,21 @@
 #!/usr/bin/bash
 
+# shell 
 rm ~/.bashrc
+# ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
+# ln -sf ~/dotfiles/.bashrc ~/.bashrc
+# ln -sf ~/dotfiles/.zshrc ~/.zshrc
+# ln -sf ~/dotfiles/.zplug ~/.zplug
+ln -sf ~/dotfiles/config.fish  ~/.config/fish/config.fish
 
-ln -sf ~/dotfiles/.bashrc ~/.bashrc
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/.zplug ~/.zplug
+# vim 
+# ln -sf ~/dotfiles/.vim ~/.vim
+# ln -sf ~/dotfiles/.vimrc ~/.vimrc
 
-
-ln -sf ~/dotfiles/.vim ~/.vim
-ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
+# git
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 
-ln -sf ~/dotfiles/.vimrc ~/.vimrc
+# others
+## slate
+ln -sf ~/dotfiles/.slate.js ~/.slate.js
+
