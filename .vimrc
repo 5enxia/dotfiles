@@ -346,7 +346,9 @@ set mouse=a
 set whichwrap=b,s,h,l,<,>,[,]
 
 "" color
-set termguicolors
+if ('mac')
+    set termguicolors
+endif
 let ayucolor='mirage'
 "let ayucolor='light'
 "let ayucolor='dark'
