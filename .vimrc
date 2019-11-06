@@ -64,6 +64,8 @@ Plug 'honza/vim-snippets'
 "" color scheme
 if has('macunix')
     Plug 'doums/darcula'
+    Plug 'ayu-theme/ayu-vim'
+    "...
 endif
 "" file/folder icon
 Plug 'ryanoasis/vim-devicons'
@@ -346,7 +348,11 @@ set noerrorbells visualbell t_vb=
 set clipboard+=unnamed,autoselect
 set mouse=a
 set whichwrap=b,s,h,l,<,>,[,]
-colorscheme darcula
+
+"" color
+"" colorscheme darcula
+let ayucolor='light'
+colorschem ayu
 
 " template
 augroup templateGroup
