@@ -35,7 +35,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 "" auto format
-Plug 'Chiel92/vim-autoformat'
+"" Plug 'Chiel92/vim-autoformat' #20191126
 "" error detect
 Plug 'scrooloose/syntastic'
 "" delete white space
@@ -84,7 +84,7 @@ let g:ycm_min_num_of_chars_for_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_key_list_select_completion = ['<Down>']
 let g:ycm_key_list_previous_completion = ['<Up>']
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "ᐅ"
+"" inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "ᐅ" #20191126
 let g:ycm_key_list_stop_completion = ['<C-y>', '<Enter>']
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:SuperTabDefaultCompletionType = '<C-n>'
@@ -94,7 +94,7 @@ if exists('make')
 endif
 
 "" auto-format
-au BufWrite * :Autoformat
+"" au BufWrite * :Autoformat #20191126
 
 "" vim-airline
 let g:airline_theme = 'powerlineish'
@@ -306,9 +306,9 @@ imap <C-f> <C-o>W
 imap <C-b> <C-o>B
 
 " base
-set encoding=utf-8
-set fileencoding=utf-8
 set fileencodings=utf-8
+set fileencoding=utf-8
+set encoding=utf-8
 set bomb
 set binary
 set ttyfast
